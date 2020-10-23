@@ -14,9 +14,9 @@ class Artist
   end
 
   def new_song(title, genre)
-    Song.new(title, self, genre)
-    self.genre = genre #in initialize or with new_song
-    self.songs = title
+    song = Song.new(title, self, genre)
+    #self.genre = genre #in initialize or with new_song
+    song.artist = self
   end
 
   def songs
