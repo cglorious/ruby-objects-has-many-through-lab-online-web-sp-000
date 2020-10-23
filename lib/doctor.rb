@@ -15,7 +15,7 @@ class Doctor
 
   def new_appointment(date, patient, appointment)
     the_appointment = Appointment.new(date, patient) #check on Appointment.new requirements
-    self.appointment =
+    self.appointment = appointment
   end
 
   def new_song(title, genre)
