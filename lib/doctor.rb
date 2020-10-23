@@ -18,4 +18,8 @@ class Doctor
     self.appointment = appointment
   end
 
+  def appointments
+    
+  end
+
 end
