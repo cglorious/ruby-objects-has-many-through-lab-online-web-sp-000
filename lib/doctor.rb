@@ -13,7 +13,7 @@ class Doctor
     @@all
   end
 
-  def new_appointment(date, patient, appointment)
+  def new_appointment(date, patient, appointment) 
     the_appointment = Appointment.new(date, patient) #check on Appointment.new requirements
     self.appointment = appointment
   end
