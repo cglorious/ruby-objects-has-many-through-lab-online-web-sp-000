@@ -18,6 +18,7 @@ class Patient
     self.appointment = my_appt
   end
 
-
+  def appointments
+  end
 
 end
