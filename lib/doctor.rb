@@ -19,11 +19,11 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.select {|appts| appts.doctor == self}
+    Appointment.all.select {|appts| appts.doctor == self} #check on Appointment.new requirements
   end
 
   def patients
-    appointments.collect {|my_appts| my_appts.patient}
+    appointments.collect {|my_appts| my_appts.patient} #check on Appointment.new requirements
   end
 
 end
