@@ -14,7 +14,7 @@ class Patient
   end
 
   def new_appointment(date, doctor)
-    my_appt = Appointment.new(date, doctor) #check on Appointment.new requirements
+    my_appt = Appointment.new(date, self, doctor) #check on Appointment.new requirements
     self.appointment = my_appt
   end
 
